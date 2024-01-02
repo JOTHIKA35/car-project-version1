@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+    font-family: 'poppins',sans-serif;
+    background-color: rgb(245, 242, 242);
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight:bold;
+    color:rgb(1, 1, 58);
+}
+.slider{
+      margin-left:21%;
+      width:900px;
+      height:550px;
+      border-radius: 5px;
+      overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height:550px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width:20%;
+    transition: all 0.5s ease;
+}
+.slide img{
+    width:900px;
+    height:550px;
+}
+.manual-slide{
+    position: absolute;
+    width:800px;
+    margin-top: -40px;
+    margin-left: 90px;
+    display: flex;
+    justify-content: center;
+}
+.manual{
+    border:2px solid black;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual:not(:last-child){
+    margin-right: 20px;
+}
+.manual:hover{
+    background: rgb(17, 97, 201);
+}
+#radio1:checked~ .first{
+    margin-left:0;
+}
+#radio2:checked~ .first{
+    margin-left:-20%;
+}
+#radio3:checked~ .first{
+    margin-left:-40%;
+}
+#radio4:checked~ .first{
+    margin-left:-60%;
+}
+#radio5:checked~ .first{
+    margin-left:-80%;
+}
+#radio6:checked~ .first{
+    margin-left:-100%;
+}
+.automatic{
+    position: absolute;
+    width:800px;
+    margin-top: 510px;
+    margin-left: 90px;
+    display: flex;
+    justify-content: center;
+}
+.automatic div{
+    border: 2px solid white;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.automatic div:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked~ .automatic .automatic1{
+    background: rgb(209, 12, 81);
+}
+#radio2:checked~ .automatic .automatic2{
+    background: rgb(209, 12, 81);
+}
+#radio3:checked~ .automatic .automatic3{
+    background: rgb(209, 12, 81);
+}
+#radio4:checked~ .automatic .automatic4{
+    background: rgb(209, 12, 81);
+}
+#radio5:checked~ .automatic .automatic5{
+    background: rgb(209, 12, 81);
+}
+#radio6:checked~ .automatic .automatic6{
+    background: rgb(209, 12, 81);
+}
+.container{
+    width:100%;
+    height:100vh;
+    margin-top: -30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container1{
+    width:1100px;
+    margin-left: 28px;
+    height:600px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+    display: flex;
+    padding:15px;
+  }
+  .container img{
+    width:100%;
+    display: block;
+  }
+  .card{
+    width:600px;
+    height:600px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+  }
+  .image-gallery{
+    display: flex;
+    transition: all 0.5s ease;
+  }
+  .image-slider{
+    display:flex;
+    margin-left: 8px;
+  }
+  .image-slider img{
+    height:100px;
+    width:94px;
+  }
+  .img{
+    border: 1px solid rgb(134, 132, 132);
+    margin-left:1px;
+  }
+  .active{
+    border: 2px solid rgba(2, 2, 2, 0.989);
+  }
+  .container2{
+    padding:0px 20px;
+ }
+ .container2 h2{
+   font-size:25px;
+   color:rgb(1, 1, 58);
+   font-weight: 500;
+ }
+ .container2 h3{
+    font-size:20px;
+    color:rgb(1, 1, 58);
+    font-weight: 500;
+  }
+  .container2 .content{
+    display: flex;
+    gap:20px;
+  }
+  .container2 .content h4{
+    font-weight: 600;
+  }
+ .form label{
+    display: inline;
+    font-size: 20px;
+    color:rgb(239, 43, 111);
+ }
+ .buttons{
+   display: flex;
+   gap:10px;
+   margin-top: 30px;
+   margin-left:10px;
+ }
+ .buttons a{
+    text-decoration: none;
+ }
+ .buttons button{
+    width:210px;
+    height:50px;
+    font-size:20px;
+    color:white;
+    background:rgb(1, 1, 58);
+    cursor: pointer; 
+ }
+ .buttons button:hover{
+      background: rgb(1, 1, 127);;
+ }

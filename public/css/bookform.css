@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.revv.co.in/blogs/wp-content/uploads/2020/09/Fun-filled-journey.jpg);
+   background-repeat: no-repeat;
+    background-size:100% 100%;
+    overflow-x: hidden;
+}
+.container{
+  max-width: 750px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 600;
+  color:rgb(1, 1, 58);
+  
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 10px 0;
+}
+form .user-details .input-box{
+  width: 330px;
+  margin-bottom: 12px;
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 600;
+}
+.user-details .input-box input{
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+}
+.user-details .input-box input:focus{
+  border-color: rgb(1, 1, 58);
+}
+.user-details .input-box select{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+  }
+  .user-details .input-box select:focus{
+    border-color: rgb(1, 1, 58);
+  }
+ form .button{
+   height: 45px;
+   margin: 35px 0px;
+   margin-left: 28px;
+ }
+ form .button input{
+   height: 100%;
+   width: 48%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 600;
+   letter-spacing: 1px;
+   cursor: pointer;
+   background: rgb(1, 1, 58);
+ }
+ form .button input:hover{
+  background: rgb(41, 3, 194);
+  }
+  @media(max-width:768px){
+    .container{
+     max-width: 100%;
+   }
+   form .user-details .input-box{
+       width: 100%;
+     }
+     .content form .user-details{
+       max-height: 400px;
+       overflow-y: scroll;
+     }
+     .user-details::-webkit-scrollbar{
+       width: 5px;
+     }
+     }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+       width: 5px;
+     }
+  }

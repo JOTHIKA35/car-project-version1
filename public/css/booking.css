@@ -1,0 +1,120 @@
+.bookpage{
+    padding-top: 10%;
+    padding-bottom: 20%;
+    color:white;
+    text-align: center;
+    font-size: 35px;
+   font-weight: 600;
+}
+.bookpage a{
+    text-decoration: none;
+}
+.Book{
+    margin-top:-140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(243, 238, 238);
+}
+.search{
+    width:350px;
+    padding:20px;
+    height:400px;
+    margin-top: -11px;
+    position: sticky;
+    top:50px;
+}
+.search h1{
+    font-size: 18 px;
+    text-align: center;
+    padding:10px 0px;
+}
+.box label{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 20%;
+    padding:10px;
+}
+.submit input{
+    background-color: rgb(1, 1, 58);
+    color: white;
+}
+.submit input:hover{
+    background-color: rgb(11, 125, 232);
+    color:black;
+}
+.details .h1{
+    font-size: 30px;
+    margin:17px;
+}
+.search-box{
+    background-color: rgb(1, 1, 58);
+    width:1170px;
+    height:60px;
+    position: sticky;
+    top:69px;
+}
+.search-box1{
+    position:relative;
+    left:809px;
+    top:-60px;
+    border-radius:40px;
+    padding:10px;
+}
+.search-box1 input{
+    border:3px solid white;
+    height:40px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+
+.details .card{
+    display: flex;
+    background-color: white;
+    width:1200px;
+    height:250px;
+    margin-bottom: 10px;
+}
+.details .card .car-image1{
+    max-width: 400px;
+    padding:10px;
+}
+.details .card .car-image1 img{
+    width: 350px;
+    height: 230px;
+}
+.details .card .name{
+    margin-top: 15px;
+    margin-left:10px;
+    font-size: 13px;
+}
+.details .card .name p{
+    margin-top:8px;
+    margin-left:5px;
+    font-size: 18px;
+}
+.details .card .name .down{
+    margin-top: 5px;
+}
+.details .card .name i{
+    padding: 5px;
+}
+.rent{
+    border: 2px solid rgb(1, 1, 58);
+    padding: 10px;
+    width:150px;
+    height:45px;
+    margin-top:175px;
+    margin-left:-225px;
+}
+.rent a{
+    color:rgb(1, 1, 58);
+    left:100px;
+    text-decoration: none;
+}
+.rent:hover{
+    background-color: white;
+}
+.rent a:hover{
+    color:black;
+}

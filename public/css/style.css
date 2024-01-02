@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  body{
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.pinimg.com/originals/34/3f/2f/343f2f07ff47a1d0ae547bf2fb68e875.jpg);
+      overflow: hidden;
+  }
+  .container{
+    max-width: 550px;
+    padding: 0 20px;
+    margin: 25px auto;
+    overflow: hidden;
+  }
+  .wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+  }
+  .title{
+    height: 80px;
+    border-radius: 5px 5px 0 0;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form{
+    padding: 5px 25px 25px 25px;
+  }
+  .box{
+    height: 45px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    font-size: 16px;
+  }
+  .box input:focus{
+    border-color:black;
+  }
+  .box input::placeholder{
+    color: #999;
+  }
+  .box i{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    color:black;
+    font-size: 18px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .password{
+    margin: 8px 0 20px 0;
+  }
+  .password a{
+    color: rgb(4, 6, 88);
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .password a:hover{
+    text-decoration: underline;
+  }
+  .btn button{
+    color:white;
+    width:100%;
+    height:45px;
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: rgb(3, 8, 78);
+    border: 1px solid rgb(232, 227, 227);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .btn button:hover{
+    background: black;
+    color:white;
+  }
+  form .signup{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .signup a{
+    color: rgb(233, 13, 13);
+    text-decoration: none;
+  }
+  .signup a:hover{
+    text-decoration: underline;
+  }
+  .box small{
+    color:red;
+  }
+  .process{
+    text-align: center;
+  }
+  .error{
+    color:red;
+    font-weight: bold;
+    text-align: center;
+  }
+  .success{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }

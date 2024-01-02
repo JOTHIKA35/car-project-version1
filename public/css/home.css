@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwcmVudGFsfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size:100% 450px;
+    overflow-x: hidden;
+}
+header{
+    width:100%;
+    height:70px;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgb(1, 1, 58);
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.appname{
+    color:rgb(45, 131, 229);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 750;
+    letter-spacing: 0.1em;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap:20px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    color:white;
+    letter-spacing: 0.1em;
+}
+header ul li a::before{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:2px;
+    background:rgb(70, 147, 235);
+    bottom: -2px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin:right;
+}
+header ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+header .profile{
+    position: relative;
+    top:5px;
+    left:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8em;
+    cursor: pointer;
+}
+header .profile a{
+    text-decoration: none;
+    color: white;
+}
+.menutoggle{
+    position: relative;
+    display: none;
+}
+.title{
+    margin-top: 125px;
+    color:white;
+    text-align: center;
+    font-size: 35px;
+   font-weight: 600;
+}
+.title a{
+    text-decoration: none;
+}
+.title button{
+    width:125px;
+    font-size: 20px;
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    margin-top:30px;
+    background-color:rgb(45, 131, 229);
+}
+.title button:hover{
+    background-color: blue;
+}
+.title h1{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.title1 h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 160px;
+}
+.title1 h1 a{
+    text-decoration: none;
+    color:  rgb(1, 1, 58);
+}
+.about{
+    display: flex;
+}
+.title1 .content{
+    font-size: 18px;
+    width:55%;
+    text-align: center;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+.title1 img{
+    width:100%;
+}
+.cars h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cars a{
+    text-decoration: none;
+    color:  rgb(1, 1, 58);
+}
+.cars-pictures{
+    margin-top:10px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    margin-left: 50px;
+    row-gap: 10px;
+}
+.pictures{
+    text-align: center;
+    width:310px;
+    border-radius: 10px;
+}
+.pictures:hover {
+    opacity:0.7;
+}
+.pictures img{
+    width:100%;
+    height:200px;
+    border:1px solid rgb(150, 144, 144);
+    border-radius: 10px;
+}
+.desc{
+    padding:5px;
+    text-align: center;
+    font-size: 20px;
+}
+.bg{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://wallpaperaccess.com/full/3497075.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 500px;
+    background-position: bottom;
+    overflow-x: hidden;
+    margin-top: 30px;
+}
+.bg h1{
+        margin: 130px 0px;
+        color:white;
+        text-align: center;
+        font-size: 45px;
+       font-weight: 800;
+    }
+.heading{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+    color:  rgb(1, 1, 58);
+}
+.content1{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 350px 350px 350px;
+    text-align: center;
+    justify-content: justify;
+    column-gap: 60px;
+    margin-left:12%;
+}
+.content-1{
+    border: 1px solid rgb(1, 1, 58);
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgb(1, 1, 58);
+    height:380px;
+}
+.content-1:hover{
+    box-shadow: 5px 5px 5px rgb(10, 109, 222);
+}
+.content-1 h3{
+    color:rgb(1, 1, 58);
+    padding:15px 0px;
+}
+.content-1 p{
+    color: gray;
+    text-align: justify;
+    padding-top:25px;
+    margin-bottom: 10px;
+}
+.content-1 img{
+    width:45%;
+    height:110px;
+}
+footer{
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    padding: 50px 100px;
+    background-color: rgb(1, 1, 58);
+}
+footer .lastcontainer{
+    display: grid;
+    grid-template-columns: 500px 180px 200px 500px;
+    column-gap: 40px;
+}
+footer .lastcontainer h2{
+    position:relative;
+    color:white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .lastcontainer h2:before{
+     content:'';
+     position:absolute;
+     bottom: -5px;
+     left:0;
+     width:50px;
+     height:2.5px;
+     background: rgb(30, 111, 224);
+}
+footer .lastcontainer p{
+    color:rgb(153, 153, 153);
+}
+.links{
+    margin-top: 20px;
+    display: flex;
+}
+.links li{
+    list-style: none;
+}
+.links li a{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background: rgb(88, 85, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px;
+    text-decoration: none;
+    border-radius:5px;
+}
+.links li a:hover{
+    background:rgb(30, 111, 224);
+}
+.links li a .fa-brands{
+    color:white;
+    font-size: 20px;
+}
+.quicklinks ul li{
+    list-style: none;
+    padding-top:10px;
+}
+.quicklinks ul li a{
+    color:rgb(153, 153, 153);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.quicklinks ul li a:hover{
+     color:white;
+}
+.contactus .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contactus .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contactus .info li span:nth-child(1){
+    color:white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contactus .info li span{
+    color:rgb(153, 153, 153);
+}
+.contactus .info li a{
+    color:rgb(153, 153, 153);
+    text-decoration: none;
+}
+.contactus .info li a:hover{
+    color: white;
+}
+.copyrights{
+    width: 100%;
+    background:rgb(88, 85, 85);
+    padding:8px 100px;
+    text-align: center;
+    color:#dad0d0;
+}
+.message .text{
+    color:white;
+}
+.btn button{
+    color:rgb(182, 205, 238);
+    background:rgb(16, 16, 177);
+}
+.btn button:hover{
+     color:white;
+     cursor: pointer;
+     background:rgb(4, 131, 227);
+}
+.login{
+    background-color: rgb(4, 131, 227);
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+.login:hover{
+    background-color: blue;
+}
+@media(max-width:768px){
+    body{
+        background-size: 100% 425px;
+    }
+     .menutoggle{
+        position: absolute;
+        right:10px;
+        bottom: 11px;
+        display: block;
+        font-size: 3em;
+        color:rgb(45, 131, 229);
+        cursor: pointer;
+     }
+     header .profile{
+        position: relative;
+        left:-30px;
+     }
+     .container ul{
+        position: absolute;
+        left: 0;
+        top:70px;
+        width:100%;
+        height:calc(100vh - 70px);
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(1, 1, 34);
+        padding: 30px;
+        padding-left: 30px;
+        padding-top: 40px;
+        left:-100%;
+        transition: 1s;
+    }
+    ul.slide{
+       left:0;
+       transition: 1s;
+   }
+   .title{
+    font-size: 30px;
+}
+.title a{
+    text-decoration: none;
+}
+   .title1 h1{
+    margin-top: 140px;
+    font-size: 25px;
+}
+.title1 a:hover::before{
+    transform: scaleX(0);
+}
+.car-container a:hover::before{
+    transform: scaleX(0);
+}
+.pictures{
+    width:400px;
+}
+.pictures img{
+    height:230px;
+}
+.about{
+    flex-direction: column;
+}
+.title1 .content{
+    font-size: 18px;
+    width:85%;
+    margin-top: 10px;
+}
+footer{
+    padding:40px;
+}
+footer .lastcontainer{
+    flex-direction: column;
+}
+footer .lastcontainer .sec{
+    margin-right: 0;
+    margin-bottom: 40px;
+}
+footer .lastcontainer .sec.aboutus,.quicklinks,.contactus{
+    width: 100%;
+}
+.copyrights{
+
+    padding: 8px 40px;
+}
+}

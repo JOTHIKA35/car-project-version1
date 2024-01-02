@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title">Login</div>
+        {{#if msg}}
+        <p class="{{msg_type}}">{{msg}}</p>
+        {{/if}}
+        <form action="/auth/login" id="form" name="login-form" method="post">
+          <div class="box">
+            <i class="fas fa-user"></i>
+            <input type="email" placeholder="Enter Email address" id ="email" name="email">
+            <small  id="email-error"></small>
+          </div>
+          <div class="box">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password"placeholder="Enter Password">
+            <small id="password-error"></small>
+          </div>
+          <div class="password"><a href="#">Forgot password?</a></div>
+          <div class="btn">
+            <button type="submit">Login</button>
+          </div>
+          <div class="signup">Don't have an account? <a href="/register">Signup now</a></div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
